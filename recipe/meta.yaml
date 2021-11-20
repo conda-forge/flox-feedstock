@@ -11,7 +11,7 @@ source:
   sha256: bbcab816249795d7a23e42b37f39c2ff04bf789c768a1a0a2551fe9d3d6c20fd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,12 +21,11 @@ requirements:
     - python >=3.7
     - setuptools_scm
   run:
-    - dask-core
     - importlib-metadata
     - numpy_groupies
+    - pandas
     - python >=3.7
     - toolz
-    - xarray
 
 test:
   imports:
