@@ -23,7 +23,7 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - importlib-metadata
-    - numpy >= 1.20
+    - numpy >=1.20
     - numpy_groupies >=0.9.15
     - pandas
     - python >=3.8
