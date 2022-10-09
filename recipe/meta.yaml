@@ -11,7 +11,7 @@ source:
   sha256: bc8af7367cfa8f3eac7c8c4f71ee02d77aff3d25da62bf61b9a7ed1920cf900c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,7 +23,7 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - importlib-metadata
-    - numpy
+    - numpy >=1.20
     - numpy_groupies >=0.9.15
     - pandas
     - python >=3.8
