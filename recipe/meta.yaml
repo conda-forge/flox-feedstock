@@ -24,7 +24,7 @@ requirements:
   run:
     - importlib-metadata
     - numpy >=1.20
-    - numpy_groupies >=0.9.15
+    - numpy_groupies >=0.9.19
     - pandas
     - python >=3.8
     - toolz
