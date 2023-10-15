@@ -18,18 +18,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools >=61
     - setuptools_scm >=7
-    - numpy >=1.20
+    - numpy >=1.22
     - numpy_groupies >=0.9.19
     - pandas
     - toolz
   run:
-    - numpy >=1.20
+    - numpy >=1.22
     - numpy_groupies >=0.9.19
     - pandas
-    - python >=3.8
+    - python >=3.9
     - toolz
 
 test:
