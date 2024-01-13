@@ -23,18 +23,18 @@ requirements:
     - setuptools_scm >=7
     - numpy >=1.22
     - numpy_groupies >=0.9.19
-    - pandas >=2
+    - pandas >=1.5
     - packaging >=21.3
     - toolz
-    - scipy
+    - scipy >=1.9
   run:
     - packaging >=21.3
     - numpy >=1.22
     - numpy_groupies >=0.9.19
-    - pandas >=2
+    - pandas >=1.5
     - python >=3.9
     - toolz
-    - scipy
+    - scipy >=1.9
   run_constrained:
     - numbagg >=0.6
 
