@@ -149,6 +149,3 @@ Feedstock Maintainers
 
 * [@dcherian](https://github.com/dcherian/)
 
-
-<!-- dummy commit to enable rerendering -->
-
