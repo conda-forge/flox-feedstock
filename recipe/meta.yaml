@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "flox" %}
 {% set version = "0.9.15" %}
 
@@ -7,18 +8,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 99befd8bb26951e88db993649d577ac27009f5a1e31a8c1aab5d794fab55d75a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=61
     - setuptools_scm >=7
     - numpy >=1.22
@@ -32,7 +33,7 @@ requirements:
     - numpy >=1.22
     - numpy_groupies >=0.9.19
     - pandas >=1.5
-    - python >=3.10
+    - python >={{ python_min }}
     - toolz
     - scipy >=1.9
   run_constrained:
@@ -45,6 +46,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/xarray-contrib/flox
