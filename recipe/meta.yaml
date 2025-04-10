@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "flox" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.3" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c032aaa56a9c76b02a8e8e383f5a83a8d74343fc985c9042d6210abddf97e3f4
+  sha256: c5803aa0086ee3c3c80f102fbe8d320c4fbc8a8daa0dd17584b00f7f0f5a20a4
 
 build:
   number: 0
