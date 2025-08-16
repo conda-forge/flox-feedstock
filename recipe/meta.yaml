@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "flox" %}
-{% set version = "0.10.4" %}
+{% set version = "0.10.5" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ccb6b497607857cfa68917584c5850005b27bf4748abdc24c106b10d5ce9056
+  sha256: 161a45b9bd053e501781b7081db15dbb61e045b2fed72f8c852fe2569ce5339e
 
 build:
   number: 0
@@ -22,20 +22,20 @@ requirements:
     - python {{ python_min }}
     - setuptools >=61
     - setuptools_scm >=7
-    - numpy >=1.22
+    - numpy >=1.26
     - numpy_groupies >=0.9.19
-    - pandas >=1.5
+    - pandas >=2.1
     - packaging >=21.3
     - toolz
-    - scipy >=1.9
+    - scipy >=1.12
   run:
     - packaging >=21.3
-    - numpy >=1.22
+    - numpy >=1.26
     - numpy_groupies >=0.9.19
-    - pandas >=1.5
+    - pandas >=2.1
     - python >={{ python_min }}
     - toolz
-    - scipy >=1.9
+    - scipy >=1.12
   run_constrained:
     - numbagg >=0.6
 
