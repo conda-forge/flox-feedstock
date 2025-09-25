@@ -8,3 +8,6 @@ bot:
     # only automerge on successful version PRs, migrations are not automerged
     automerge: 'version'
     inspection: update-grayskull  # update recipe using only grayskull
+    version_updates:
+      exclude:
+        - '9.11'
