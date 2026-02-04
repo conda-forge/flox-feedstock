@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "flox" %}
-{% set version = "0.10.8" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/7d/4d/93cbe6588aa434173ba5204e3a8b70587a46be10daff0a393c89a1770c34/flox-{{ version }}.tar.gz
-  sha256: bb3e7a249dcb4b45bdd8320f9130a1117dc58b9ce6a1e8140b4a20961d2eab03
+  url: https://files.pythonhosted.org/packages/b2/0a/c87438feba1b0e8cb65c8cc2a1de3af18804c81e22c268e7afcf954bf17e/flox-{{ version }}.tar.gz
+  sha256: 0a53909bb8929ad8d1dc89a2153144531fd5f18b8106c8bbb4a30151f458b029
 
 build:
   number: 0
